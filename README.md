@@ -22,6 +22,6 @@
 
 - [解压缩](docs/解压缩.md)
 
-## Clash 科学上网
+## 科学上网
 
-- []
+- [clash](docs/clash.md)
