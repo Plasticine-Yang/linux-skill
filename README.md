@@ -17,6 +17,7 @@
 ## 编程环境相关
 
 - [rust](docs/编程环境相关/rust.md)
+- [puppeteer](docs/编程环境相关/puppeteer.md)
 
 ## 解压缩
 
