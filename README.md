@@ -13,3 +13,7 @@
 1. [查看当前使用的-shell](docs/shell相关.md#查看当前使用的-shell-类型)
 2. [查看系统中安装了哪些-shell](docs/shell相关.md#查看系统中安装了哪些-shell)
 3. [修改系统默认 shell](docs/shell相关.md#修改系统默认-shell)
+
+## 编程环境相关
+
+1. [rust](docs/编程环境相关/rust.md)
