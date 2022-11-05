@@ -106,6 +106,28 @@ nvim /etc/clash/config.yaml
 
 弹出来的界面中输入你的服务器公网`ip`，端口默认是`9090`，如果想要修改可以在`config.yaml`中修改`external-controller`选项，`secret`就是刚刚配置的`secret`
 
+修改完配置后记得重启服务才能生效
+
+```shell
+sudo systemctl restart clash
+```
+
 然后就可以进行节点的切换啦！
+
+## 配置全局系统代理
+
+在`linux`中配置环境变量即可开启全局系统代理，我们将其代理到服务器内网 ip 的 7890 端口上即可让流量全都走向`clash`，从而开启科学上网
+
+```shell
+export ALL_PROXY="socks5h://服务器内网ip:7890"
+export HTTP_PROXY="http://服务器内网ip:7890"
+export HTTPS_PROXY="http://服务器内网ip:7890"
+```
+
+这里配置的环境变量只是临时的，如果需要每次打开终端会话都生效的话，可以将其配置到你的`.zshrc`中，配置好环境变量后可以试着访问`google`看看能否成功，成功的话则成功开启科学上网！
+
+```shell
+curl https://www.google.com
+```
 
 至此，`clash`在`linux`服务器上的配置就完成了。
